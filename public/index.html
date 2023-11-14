@@ -1,9 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Security Example</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #333333;
+        color: #dddddd;
+        display: flex;
+        justify-content: center;
+      }
+      a {
+        color: limegreen;
+        font-size: 1.3rem;
+      }
+      a:visited {
+        color: lightcoral;
+      }
+      .container {
+        display: inline-flex;
+        gap: 20px;
+
+        padding: 10px 20px;
+        margin: 5px;
+
+        border: 1px solid lightcyan;
+        border-radius: 7px;
+        max-width: auto;
+      }
+      .wrapper {
+        margin: 1rem auto;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
-    <b>Hello!</b>
+    <div class="wrapper">
+      <h1>Hello from super secret site</h1>
+      <b>Hello! To see your secret click on the secret link below:</b>
+      <br />
+      <div class="container">
+        <a href="/secret">secret link</a>
+        <a href="/auth/google">Google auth</a>
+        <a href="/auth/logout">Logout</a>
+      </div>
+    </div>
   </body>
 </html>
