@@ -8,7 +8,6 @@ const fs = require("fs");
 const path = require("path");
 const https = require("https");
 const express = require("express");
-const { serializeUser } = require("passport");
 
 const PORT = 3000;
 
