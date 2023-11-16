@@ -1,5 +1,5 @@
 ## Security application
-Mini backaend application.
+Backend application.
 <h3>Implemented features:</h3>
 <ul>
     <li>OAuth 2.0 authorization with Google</li>
